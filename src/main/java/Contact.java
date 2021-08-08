@@ -32,7 +32,13 @@ public class Contact {
     public void findContactByName(){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter name: ");
-        System.out.println(hasmap.get(sc.nextLine()));
+        String inputName = sc.nextLine();
+        String outputNumber = hasmap.get(inputName);
+        if (outputNumber == null){
+            System.out.println("Not found");
+        } else {
+            System.out.println(outputNumber);
+        }
 
     }
 
