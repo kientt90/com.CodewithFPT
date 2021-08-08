@@ -24,9 +24,14 @@ public class Contact {
     }
 
     public void printContact(){
-        for (String key: hasmap.keySet()){
-            System.out.println(key + ":" + hasmap.get(key));
+        if (hasmap.isEmpty())
+            System.out.println("Address Book is empty! Add contact first!");
+        else{
+            for (String key: hasmap.keySet()){
+                System.out.println(key + ":" + hasmap.get(key));
+            }
         }
+
     }
 
     public void findContactByName(){
