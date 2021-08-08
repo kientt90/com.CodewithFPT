@@ -17,7 +17,7 @@ public class Contact {
             System.out.print("Phone Number: ");
             setPhoneNumber(sc.nextLine());
             hasmap.put(getName(),getPhoneNumber());
-            System.out.print("Press any to continue! Press N to stop");
+            System.out.print("Press any key to continue! Press N to go back to Main Menu!: ");
             choice = sc.nextLine();
         }while (!choice.equals("N"));
 
